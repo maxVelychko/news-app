@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchNews } from "../actions";
-import App from "../components/App";
+import News from "../components/News";
 
 const mapStateToProps = state => {
     return {
@@ -16,4 +16,4 @@ const mapDispatchToProps = dispatch => {
     }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(News);
